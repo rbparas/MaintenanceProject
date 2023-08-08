@@ -1,0 +1,42 @@
+.topmenu{
+    display: flex;  
+    justify-content: space-between;  
+    background-color: var(--lightblue);
+    padding: 0.5rem 4rem;       
+}
+
+.top{
+    display: flex;
+    font-weight:200;
+    font-size: 13px;
+    gap: 2rem;
+}
+
+.social ul{
+    display: flex;
+    list-style: none;
+    gap:1rem;
+    
+}
+@media screen and (max-width: 480px) {
+    .topmenu{
+        display: flex;    
+        background-color: var(--lightblue);
+        padding: 0.5rem;       
+    }
+    
+    .top{
+        display: flex;
+        font-weight:200;
+        font-size: 13px;
+        gap: 0.5rem;
+    }
+    
+    .social ul{
+        display: flex;
+        list-style: none;
+        gap:0.5rem;
+        
+    }
+    
+}

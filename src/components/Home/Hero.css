@@ -1,0 +1,130 @@
+.herosection {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 10rem;    
+    color: white;
+}
+
+.hero-container {
+    margin-top: -76px;
+}
+
+.herosection button{
+    padding: 1rem 1rem;
+    color: var(--darkblue);
+    font-weight: 600;
+    width: 35%;
+}
+.hero-banner{
+    background-color: var(--lightblue);
+    padding: 3rem 10rem;
+    color: white;
+}
+.hero-banner h1{
+    color: white;
+}
+.lefttext{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+.lefttext h1{
+    color: var(--lightblue);
+    font-size: 70px;
+    line-height: 80px;
+}
+.lefttext h1 span {
+    color: white;
+}
+
+.slider{
+    width: 400px;
+    height: 500px;
+    background-color: var(--darkblue);
+    position: relative;
+}
+.radio-buttons {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+  
+.radio-buttons label {
+    margin: 0 3px;
+}
+
+@media screen and (max-width: 768px){
+    .herosection {
+        display: block;
+        justify-content: space-between;
+        padding: 10rem 1rem;    
+        color: white;
+    }
+    
+    .hero-container {
+        margin-top: -94px;
+    }
+    
+    .herosection button{
+        all: unset;
+        background-color: white;
+        padding: 1rem 2rem;
+        color: var(--darkblue);
+        font-weight: 600;
+        width: 35%;
+    }
+    .hero-banner{
+        background-color: var(--lightblue);
+        padding: 3rem 10rem;
+        color: white;
+    }
+    .hero-banner h1{
+        color: white;
+    }
+    .lefttext{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .lefttext p{
+        margin-bottom: 15px;
+    }
+    
+    .lefttext h1{
+        color: var(--lightblue);
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .lefttext h1 span {
+        color: white;
+    }
+    
+    .slider{
+        width: 100%;
+        height: 100%;
+        background-color: var(--darkblue);
+        position: relative;
+    }
+    .slider img{
+        width: 100% !important;
+        height:100% !important;
+    }
+    .radio-buttons {
+        position: absolute;
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+      
+    .radio-buttons label {
+        margin: 0 3px;
+    }
+}
+

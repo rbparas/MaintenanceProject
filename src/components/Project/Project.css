@@ -1,0 +1,49 @@
+.project-content{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    gap: 1rem; 
+}
+.project-content h1{
+    font-size: 68px;
+}
+.project-title, h1{
+    color: var(--darkblue);
+}
+.project-title{
+    position: relative;
+}
+.project-title:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 36%;
+    height: 2px;
+    content: '\a0';
+    background-color: var(--lightblue);
+    margin-left: 2%;
+}
+.project-items{
+    display: flex;flex-direction: row;    
+    width: 100%;
+}
+
+.project-item {
+    list-style: none;
+    width: 380px;
+    height: 559px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background-size: cover;
+    
+}
+.details{
+    padding: 2rem 2rem;
+    color: white;
+    font-size: 28px;
+}
+.details p{
+    float: right;
+    font-size: 15px;
+}

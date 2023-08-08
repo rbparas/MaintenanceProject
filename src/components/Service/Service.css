@@ -1,0 +1,38 @@
+.service-container{
+    padding: 5rem 10rem;
+    display: flex;
+    gap: 3rem;
+    
+}
+.service-title{
+    position: relative;
+    color: var(--darkblue)
+}
+.service-content h1{
+    font-size: 69px;
+    color: var(--darkblue);
+    line-height: 5rem;
+}
+.service-title:after{
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 5%;
+    height: 2px;
+    content: '\a0';
+    background-color: var(--lightblue);
+    margin-left: 1%;
+}
+.service-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.service-items .service-item {
+    border: 1px solid var(--lightblue);
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 2rem;    
+}

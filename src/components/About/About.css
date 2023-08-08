@@ -1,0 +1,78 @@
+.about-container{
+    padding: 10rem 10rem;
+    display: flex;
+    gap: 3rem;
+    
+}
+.about-left{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+.about-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about-right .about-title{
+    position: relative;
+}
+.about-right .about-title:after{
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 9%;
+    height: 2px;
+    content: '\a0';
+    background-color: var(--lightblue);
+    margin-left: 2%;
+
+}
+.about-right h1{
+    font-size: 69px;
+    color: var(--darkblue);
+    line-height: 5rem;
+}
+.about-left .big-image{    
+    width: 500px;
+    height: 500px;
+    border: 8px solid #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.about-left .small-image{
+    position: absolute;
+    bottom: -70px;
+    right: 30px;
+    max-width: 50%;
+    z-index: 1; 
+    width: 300px;
+    height: 170px;
+    border: 8px solid #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.about-right button{
+    padding: 1rem 1rem;
+    background-color: var(--darkblue);
+    color: #fff;
+    font-weight: 700;
+    width: 35%;
+}
+@media screen and (max-width: 480px){
+    .about-container{
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .about-right{
+        width: 100%;
+        display: block;
+        margin-top: 40px;
+    }
+    .about-right h1{
+        font-size: 40px;
+        color: var(--darkblue);
+        line-height: 5rem;
+    }
+}

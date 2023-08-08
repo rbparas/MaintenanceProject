@@ -1,0 +1,121 @@
+.test-container{
+    padding: 9rem 10rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5rem;
+    
+}
+.left{
+    width: 100%;
+    .testimonial-title{
+        color: var(--darkblue);
+        position: relative;
+        &:after{
+            position: absolute;
+            top: 51%;            
+            width: 10%;
+            height: 2px;
+            content: '\a0';
+            background-color: var(--lightblue);
+            margin-left: 1%;
+        }
+    }
+    h1{
+        font-size: 68px;
+        line-height: 5rem;
+    }
+    .test-text{
+        width: 80%;
+    }
+    
+}
+
+.right{
+    height: 408px;
+    margin-top: -6%;
+    padding: 2rem;
+    background-size: cover;
+    overflow: hidden;
+    .slides{
+        list-style: none;
+        color: white;
+        .sliding-item{
+            
+            
+            p{
+                margin-top: 9%;
+            }
+            h1{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 28%;
+                color: white;
+                font-size: 20px;
+                font-weight: 400;
+                &:before{                              
+                    width: 1%;
+                    height: 2px;
+                    margin-right: 1%;
+                    margin-top: 2%;
+                    content: '\a0';
+                    background-color: white;
+    
+                }
+            }
+            .ppic{
+                margin-top: -70px;
+                position: absolute;
+                margin-left: -106px;
+
+                img{
+                    width: 156px;
+                    border: 6px solid var(--lightblue);
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  
+    .radio-label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      margin: 0 6px;
+  
+      .radio-button {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid var(--lightblue);
+        position: relative;
+        top: 2px;
+        background-color: transparent;
+      }
+  
+      input[type='radio'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+  
+        &:checked + .radio-button {
+          background-color: var(--lightblue);
+        }
+      }
+  
+      &.active .radio-button {
+        background-color: var(--lightblue);
+      }
+    }
+  }
+  
